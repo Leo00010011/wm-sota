@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.semanticscholar.org)",
+      "WebFetch(domain:arxiv.org)",
+      "WebSearch",
+      "Bash(curl -s --max-time 30 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2607.06018?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 30 \"http://export.arxiv.org/api/query?id_list=2607.06018\")",
+      "Bash(curl -s -m 20 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2410.14081?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 30 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2503.11999?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 30 \"http://export.arxiv.org/api/query?id_list=2503.11999\")",
+      "Bash(cd /home/leonardo.ulloa/projects/international/01_ucsd_wang_su && printf '%s\\\\n' '---' 'citation_count: 35' 'citation_source: \"Semantic Scholar, 2026-10-15\"' 'venue: \"IEEE ICRA 2024\"' 'date: 2023-09-25' 'research_group: \"UC San Diego \\(Xiaolong Wang, Hao Su\\)\"' '---' '' | cat - modem-v2.md > /home/leonardo.ulloa/projects/international/01_ucsd_wang_su/.modem-v2.tmp && mv /home/leonardo.ulloa/projects/international/01_ucsd_wang_su/.modem-v2.tmp modem-v2.md && head -8 modem-v2.md && wc -l modem-v2.md)",
+      "Bash(curl -s \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2503.01837?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 20 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2310.16029?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 20 \"http://export.arxiv.org/api/query?id_list=2310.16029\")",
+      "Bash(curl -s \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2209.00588?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s \"https://export.arxiv.org/api/query?id_list=2209.00588\")",
+      "Bash(curl -s --max-time 30 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2411.04983?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 30 \"http://export.arxiv.org/api/query?id_list=2411.04983\")",
+      "WebFetch(domain:proceedings.mlr.press)",
+      "Bash(curl -s -m 30 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2602.11389?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -sL --max-time 30 \"https://arxiv.org/abs/2411.04983\")",
+      "Bash(curl -s --max-time 30 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2605.26379?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 30 -I https://arxiv.org/abs/2605.26379)",
+      "Bash(curl -s --max-time 30 \"https://arxiv.org/abs/2605.26379\")",
+      "Bash(curl -sL --max-time 30 \"https://proceedings.mlr.press/v267/zhou25t.html\")",
+      "Bash(curl -s --max-time 20 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2412.03572?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(python3 -)",
+      "Bash(curl -s --max-time 30 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2501.08303?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 30 \"https://export.arxiv.org/abs/2501.08303v1\")",
+      "WebFetch(domain:eccv.ecva.net)",
+      "Bash(curl -s --max-time 60 \"https://api.semanticscholar.org/graph/v1/paper/arXiv:2605.26379?fields=citationCount,venue,year,publicationDate\")",
+      "Bash(curl -s --max-time 90 \"https://neurips.cc/static/virtual/data/neurips-2026-orals-posters.json\" -o /tmp/claude-4484/neurips.json)",
+      "Read(//tmp/claude-4484/**)",
+      "WebFetch(domain:neurips.cc)"
+    ],
+    "additionalDirectories": [
+      "/home/leonardo.ulloa/projects/international/01_ucsd_wang_su"
+    ]
+  }
+}
